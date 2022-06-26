@@ -18,21 +18,18 @@
 		<li>Violet</li>
 	</ul>
 
-	<ol>
-		<li>One</li>
-		<li>Two</li>
-		<li>Three</li>
-	</ol>
 
 	<script type="text/javascript">
-		$(".one").css("backgroundColor", "red");
-		var awesomeStyle = {
-			color: "green",
-			background: "yellow",
-			border: "1px solid red"
+		if(jQuery) {
+			alert("jQuery is added");
+		} else {
+			alert("jQuery is not added");
 		}
-	$("h2").css(awesomeStyle);
-	$("ul li").css("color", "orange");
+		
+		console.log($("h2").text());
+		console.log($("ul").text());
+		$("h2").text("New Colors");
+		$("li").text("Favorite color");
 	</script>
 </body>
 </html>
