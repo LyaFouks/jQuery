@@ -7,14 +7,32 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-	<h1>Header h1</h1>
-	<h2>Header h2</h2>
+	<h2>Rainbow Colors</h2>
+	<ul>
+		<li>Red</li>
+		<li>Orange</li>
+		<li class="one">Yellow</li>
+		<li>Green</li>
+		<li>Blue</li>
+		<li>Indigo</li>
+		<li>Violet</li>
+	</ul>
+
+	<ol>
+		<li>One</li>
+		<li>Two</li>
+		<li>Three</li>
+	</ol>
+
 	<script type="text/javascript">
-		$(document).ready(function() {
-			$("h2").click(function() {
-				$(this).css("background-color", "#e0ef0e");
-			})
-		});
+		$(".one").css("backgroundColor", "red");
+		var awesomeStyle = {
+			color: "green",
+			background: "yellow",
+			border: "1px solid red"
+		}
+	$("h2").css(awesomeStyle);
+	$("ul li").css("color", "orange");
 	</script>
 </body>
 </html>
