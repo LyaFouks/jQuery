@@ -18,13 +18,18 @@
 		<li>Indigo</li>
 		<li>Violet</li>
 	</ul>
+	<img id="sam" src="images/Ninja.jpg">
+	<img id="sam" src="images/Ninja.jpg">
+	<img id="sam" src="images/Ninja.jpg">
+
 
 
 	<script type="text/javascript">
-		console.log($("li").html());
-		console.log($("ul").html());
-		$("li").html("<a href='http://google.com'>Google</a>");
-		$('ul').html("<li>First Element</li><li>Second Element</li>");
+		$("img").attr("src", "images/сharacters.jpg");
+		$("img").css("width", "300px");
+		$("input").attr("type", "checkbox");
+		$("img:first").attr("src", "images/Ninja.jpg");
+		$("img:last").attr("src", "images/Butterfly.jpg")
 	</script>
 </body>
 </html>
