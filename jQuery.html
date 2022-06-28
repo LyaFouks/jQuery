@@ -8,7 +8,7 @@
 </head>
 <body>
 	<input type="text" placeholder="some input" name="some">
-	<h2>Rainbow Colors</h2>
+	<h2 style="display: none">Rainbow Colors</h2>
 	<ol>
 		<li>Red</li>
 		<li>Orange</li>
@@ -24,19 +24,43 @@
 		<option>Three</option>
 	</select>
 
+	<br>
+
+	<button id="fadeOut">Fade out</button>
+	<button id="fadeIn">Fade in</button>
+	
 	<script type="text/javascript">
-		$("li").on("click", function() {
-			$(this).css("background", "yellow");
-		})
-		$("input").on("keypress", function(){
-			console.log("The key has pressed.");
-		})
-		$("li").on("mouseenter", function(){
-			$(this).css("color", "red");
-		})
-		$("li").on("mouseleave", function(){
-			$(this).css("color", "black");
-		})
-	</script>
+		// $("#fadeOut").on("click", function() {
+		// 	$("h2").fadeOut(3000, function() {
+		// 		console.log("Fading complete.");
+		// 	})
+			
+		// })
+		// $("#fadeIn").on("click", function() {
+		// 	$("h2").fadeIn(3000, function() {
+		// 		console.log("Fading in complete.");
+		// 	})
+			
+		// })
+		// $("#fadeOut").on("click", function() {
+		// 	$("h2").fadeToggle(3000, function() {
+		// 		console.log("Fading complete.");
+		// 	})
+			
+		// })
+		// $("#fadeOut").on("click", function() {
+		// 	$("h2").slideUp(2000);
+		// 	console.log("Slading up is complete.");
+		// 	})
+		// $("#fadeIn").on("click", function() {
+		// 	$("h2").slideDown(2000);
+		// 	console.log("Slading down is complete.");
+		// 	})
+		$("#fadeOut").on("click", function() {
+			$("h2").slideToggle(1000);
+			console.log("Slading up is complete.");
+
+			})
+</script>
 </body>
 </html>
