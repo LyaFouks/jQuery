@@ -25,8 +25,18 @@
 	</select>
 
 	<script type="text/javascript">
-		$("input").val("");
-		$("select").val();
+		$("li").on("click", function() {
+			$(this).css("background", "yellow");
+		})
+		$("input").on("keypress", function(){
+			console.log("The key has pressed.");
+		})
+		$("li").on("mouseenter", function(){
+			$(this).css("color", "red");
+		})
+		$("li").on("mouseleave", function(){
+			$(this).css("color", "black");
+		})
 	</script>
 </body>
 </html>
